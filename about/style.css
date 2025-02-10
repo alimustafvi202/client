@@ -239,23 +239,31 @@ header p {
 
 .new-section {
     padding: 50px;
-    background:  #ef2626;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 20px;
     margin: 30px auto;
-    max-width: 1200px;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    height: 300px;
+    justify-content: center; /* Aligns cards centrally */
+    background-image: url(../icon-bk.png);
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Controls space between cards */
 }
 
 .new-section .card {
+    position: relative;
     border-radius: 15px;
+    background: linear-gradient(to left, red, orange);
     padding: 20px;
-    flex: 1;
+    margin: 0; /* Removes excessive margins */
     text-align: center;
+    width: 350px; /* Ensures equal card width */
+    right: 300px;
 }
+
 
 .new-section h3 {
     color: #fff;
@@ -264,8 +272,8 @@ header p {
 }
 
 .new-section p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.8rem;
+    line-height: 1.2;
 }
 
 /* Footer Styles */
@@ -333,7 +341,6 @@ footer a {
 
 .contact-section {
     position: relative;
-    bottom: 150px;
     max-width: 900px;
     height: 150px;
     padding: 10px;
