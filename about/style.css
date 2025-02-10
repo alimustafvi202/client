@@ -1,0 +1,457 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    filter: brightness(50%);
+}
+
+.navbar {
+    display: flex;
+    background: linear-gradient(360deg, #000, #fff);  /* Black to white gradient */
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 350px;
+    height: 40px;
+    margin-left: 60px;
+    backdrop-filter: blur(10px);  /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px);  /* For Safari */
+    position: absolute; /* Position it in front of the image */
+    top: 20px; /* Adjust if needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the navbar is above the image */
+    border: 2px solid white; /* White outline */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.logo
+{
+    position:absolute;
+    margin-top: 0px;
+    margin-left: 20px;
+    top:-100px;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.content-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* What Sets Us Apart Section */
+.what-sets-us-apart {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.what-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.what-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.what-feature-box {
+    background: linear-gradient(to right, orange, red);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.what-feature-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.what-feature-box h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.what-focus {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.what-focus h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.what-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.what-focus-box {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.what-focus-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.what-footer {
+    text-align: center;
+    padding: 20px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header-section {
+    position: relative;
+    text-align: center;
+}
+
+.header-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(50%);
+    border-radius: 0 0 20px 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.principles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.principle {
+    text-align: center;
+    max-width: 200px;
+}
+
+.principle i {
+    font-size: 2rem;
+}
+
+/* Why Oily LLC Section */
+.why-oily {
+    background: linear-gradient(to right, #ef4444, #dc2626);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-box {
+    background: rgba(220, 38, 38, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: black;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-text,
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #dc2626;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+/* Add these new styles to your existing CSS */
+
+/* Smooth transitions for all elements */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation hover effects */
+.nav a {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff4d4d;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #ff4d4d;
+}
+
+/* Header text animation */
+.header-text {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Feature box hover effects */
+.what-feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+}
+
+.what-feature-box i {
+    transition: transform 0.3s ease;
+}
+
+.what-feature-box:hover i {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+/* Focus box hover effects */
+.what-focus-box:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #333 0%, #444 100%);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.3);
+}
+
+/* Principle cards animation */
+.principles {
+    perspective: 1000px;
+}
+
+.principle {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.principle:hover {
+    transform: rotateY(10deg) rotateX(10deg) translateY(-5px);
+}
+
+.principle i {
+    transition: color 0.3s ease;
+}
+
+.principle:hover i {
+    color: #ff4d4d;
+}
+
+/* Why Oily section animations */
+.content-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Contact section hover effects */
+.contact-info p {
+    position: relative;
+    padding-left: 30px;
+}
+
+.contact-info p::before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+    color: #ff4d4d;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info p:hover::before {
+    opacity: 1;
+}
+
+/* Social media hover effects */
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2) rotate(360deg);
+    color: #ffd700;
+}
+
+/* Image hover effects */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Scroll animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+    
+    .principles {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .what-features,
+    .what-focus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

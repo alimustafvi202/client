@@ -6,51 +6,68 @@
     <title>Featured Projects</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
         .container {
             width: 90%;
             max-width: 1200px;
-            display: flex;
+            margin: auto;
+            padding: 20px;
         }
-        .card {
-            background-color: #333;
+        .section {
+            background-color: #2a2a2a;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            flex: 1;
+            margin-bottom: 20px;
         }
         .highlight {
-            background-color: #d13329;
-            flex: 1;
-            margin-right: -20px;
-            padding-left: 30px;
+            background-color: #e63946;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+        }
+        .section h2, .highlight h2 {
+            color: #ffcc00;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card highlight">
-            <h3>Space Hotel (Hospitality)</h3>
-            <p><strong>Overview:</strong> Space Hotel is a futuristic concept that combines luxury with cutting-edge design...</p>
-            <h3>Urban Slice (Culinary)</h3>
-            <p><strong>Overview:</strong> Urban Slice offers fresh, modern pizza concepts designed to meet the demands of today’s customers...</p>
-        </div>
-        <div class="card">
-            <h2>FEATURED PROJECTS</h2>
-            <p>Oily LLC takes pride in a diverse range of projects across key sectors. Here are some of the highlights from our portfolio:</p>
-            <h3>Enpro (Oil & Gas Sector)</h3>
+        <h1>FEATURED PROJECTS</h1>
+        <div class="section">
+            <h2>Enpro (Oil & Gas Sector)</h2>
             <p><strong>Overview:</strong> Enpro is an integral part of Oily LLC’s focus on sustainable energy...</p>
-            <h3>Wyndham Hotels (Hospitality)</h3>
+            <p><strong>Impact:</strong> Driving innovation in energy while maintaining a strong commitment...</p>
+        </div>
+        <div class="section">
+            <h2>Wyndham Hotels (Hospitality)</h2>
             <p><strong>Overview:</strong> Through our investment in Wyndham Hotels, we support creating exceptional guest experiences...</p>
+            <p><strong>Impact:</strong> Elevating hospitality standards while expanding accessibility...</p>
+        </div>
+        <div class="highlight">
+            <h2>Space Hotel (Hospitality)</h2>
+            <p><strong>Overview:</strong> Space Hotel is a futuristic concept that combines luxury with cutting-edge design...</p>
+            <p><strong>Impact:</strong> Setting a new standard in the hospitality sector...</p>
+            <img src="space-hotel.jpg" alt="Space Hotel Image">
+        </div>
+        <div class="highlight">
+            <h2>Urban Slice (Culinary)</h2>
+            <p><strong>Overview:</strong> Urban Slice offers fresh, modern pizza concepts designed to meet the demands of today’s customers...</p>
+            <p><strong>Impact:</strong> Transforming dining experiences by focusing on high-quality ingredients...</p>
+            <img src="urban-slice.jpg" alt="Urban Slice Image">
         </div>
     </div>
 </body>
