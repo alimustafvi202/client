@@ -44,9 +44,15 @@ body {
     font-size: 10px;
     font-weight: bold;
 }
+.logo
+{
+    
+    margin-top: 30px;
+    margin-left: 20px;
+}
 
 .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('Layer\ 0.png') no-repeat center center;
+    background: url('Layer\ 0.png') no-repeat center center;
     background-size: 100% 90%;  /* Adjust the height of the background image */
     background-position: center center;  /* Center the image */
     height: 100vh;  /* Keep the section height fixed */
@@ -55,11 +61,12 @@ body {
     color: #fff;
     position: relative;
     z-index: 1;  /* Ensure the hero section stays behind the navbar */
+    bottom: 100px;
 }
 
 .hero-content {
     max-width: 400px;
-    background: transparent;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     padding: 30px;
     border-radius: 15px;
     margin-right: 500px;
@@ -85,6 +92,7 @@ body {
     display: flex;
     padding: 0px;
     margin: 0px;
+    bottom: 150px;
     background-image: url('1.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
@@ -118,8 +126,10 @@ body {
     border-radius: 12px;
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 600px;
+    height: 150px;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .card1 {
@@ -158,12 +168,15 @@ body {
 
 .standsout{
     display: flex;
+    position: relative;
     padding: 0px;
     margin: 0px;
-    background-image: url('d.png'); /* Replace with your image path */
+    bottom: 150px;
+    background-image: url('bg.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    
 }
         .grid-container {
             display: grid;
@@ -173,9 +186,13 @@ body {
         }
 
         .grid-item {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             overflow: hidden;
+            position: relative;
+            top: 40px;
+            left: 190px;
+            padding: 5px;
         }
 
         .grid-item img {
@@ -186,11 +203,9 @@ body {
 
         /* Applying curved clip-path to each item */
         .grid-item:nth-child(1) img { clip-path: circle(90% at 10% 90%); } /* Moved from top-left to bottom-left */
-.grid-item:nth-child(2) img { clip-path: circle(90% at 90% 90%); } /* Moved from top-right to bottom-right */
-
-.grid-item:nth-child(3) img { clip-path: circle(90% at 90% 10%); } /* Moved from left (10%) to right (90%) */
-.grid-item:nth-child(4) img { clip-path: circle(90% at 10% 10%); } /* Moved from right (90%) to left (10%) */
-
+        .grid-item:nth-child(2) img { clip-path: circle(90% at 90% 90%); } /* Moved from top-right to bottom-right */
+        .grid-item:nth-child(3) img { clip-path: circle(90% at 90% 10%); } /* Moved from left (10%) to right (90%) */
+        .grid-item:nth-child(4) img { clip-path: circle(90% at 10% 10%); } /* Moved from right (90%) to left (10%) */
         .grid-item:nth-child(5) img { clip-path: circle(90% at 10% 90%); }
         .grid-item:nth-child(6) img { clip-path: circle(90% at 90% 90%); }
         .grid-item:nth-child(7) img { clip-path: circle(90% at 90% 10%); }
@@ -226,6 +241,7 @@ body {
             padding: 20px;
             border-radius: 10px;
             margin-top: 30px;
+            width: 700px;
         }
         .explore-title {
             font-size: 22px;
@@ -249,7 +265,10 @@ body {
 
 
         .contact-section {
+            position: relative;
+            bottom: 150px;
             max-width: 900px;
+            height: 150px;
             padding: 10px;
             text-align: left;
           }
@@ -276,11 +295,12 @@ body {
       
           .cta-container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-          }
-          
-          .cta-button {
+            align-items: center;
+            width: 100%; /* Ensures full width */
+        }
+        
+        .cta-button {
             display: inline-block;
             background-color: #ff4a4a;
             color: white;
@@ -290,41 +310,44 @@ body {
             padding: 10px 20px;
             border-radius: 50px;
             transition: background-color 0.3s ease;
-          }
-          
-          .cta-button:hover {
+            margin-left: 30px;
+        }
+        
+        .cta-button:hover {
             background-color: #e03e3e;
-          }
-          
-          .social-icons {
+        }
+        
+        .social-icons {
             display: flex;
-            align-items: center;
-          }
-          
-          .social-icons a {
+           position: relative; /* Pushes icons to the right */
+           left: 500px;
+        }
+        
+        .social-icons a {
             color: #ff4a4a;
             text-decoration: none;
             font-size: 20px;
-            margin-left: 15px;
-            transition: color 0.3s ease;
-          }
-          
-          .social-icons a:hover {
-            color: #e03e3e;
-          }
-        
-          .logo
-        {
-            position:absolute;
-            margin-top: 30px;
             margin-left: 20px;
+            transition: color 0.3s ease;
         }
-
+        
+        .social-icons a:hover {
+            color: #e03e3e;
+        }
+        
+        
+       
         .container-shapes {
             position: relative;
             width: 1380px;
             height: 700px;
-            
+            display: flex;
+            padding: 0px;
+            bottom: 150px;
+            background-image: url('d.png'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
             
           }
         .bottom-section {
@@ -357,20 +380,23 @@ body {
 
           .section {
             transform: scaleY(-1);
-            
+            top: 40px;
             border-radius: 10px;
             position: relative;
             left: 50px;
             width: 40%;
-            bottom: 10px;
+            
         }
        
         .section ul {
-            padding: 0 20px; /* Remove negative padding */
+
+            padding: 0 8px; /* Remove negative padding */
             /* Optional: Removes default bullets */
+            position: relative;
+            
         }
         
-        .section ul h2 {
+        .section ul h3 {
             margin: 0; /* Removes default margin */
             
             
@@ -378,16 +404,53 @@ body {
         
         .section ul li {
             margin-left: 50px; /* Removes extra gap */
-          
+            font-size: 14px;
         }
-
-     .frame img {
-            width: 550px;
-            height: 250px;
+        .section h1,  
+        .section p {  
+            margin: 0;  
+        }  
+        .section p {  
+            font-size: 14px;  
+        }  
+        .frame2 img {
+            transform: scaleY(-1);
+            height: auto;
+            width: 40%;
             border-radius: 20px;
-            margin-left: 90px;
+            position: relative;
+            left: 800px;
+            bottom: 160px;
         }
 
+
+        
+     
+        .section1{
+            transform: scaleX(-1);
+            position: relative;
+            
+            
+        }
+        .section1 ul {
+            padding: 0 20px; /* Remove negative padding */
+            position: relative;/* Optional: Removes default bullets */
+            left: 53%;
+            width: 40%;
+        }
+        
+        .section1 ul h2 {
+            margin: 0; /* Removes default margin */
+            padding-bottom: 5px; /* Adjust spacing if needed */
+        }
+        
+        .section1 ul li {
+            margin: 0; /* Removes extra gap */
+            padding: 0; /* Ensures consistent spacing */
+            position: relative;
+            left: 7%;
+            
+        }
         .section2 {
             padding: 10px;
             border-radius: 10px;
@@ -410,6 +473,16 @@ body {
             margin-left: 50px;
             padding: 0; /* Fixed padding */
         }
+
+        .frame img {
+            width: 550px;
+            height: 250px;
+            border-radius: 20px;
+            margin-left: 880px;
+            margin-top: 5px;
+        }
+
+      
 
 
           
